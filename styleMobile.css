@@ -1,9 +1,11 @@
-@media screen and (min-width: 480px){
+@media screen and (max-width: 599px){
 html{
 
 }
 body{
-
+  font-family: 'Inter', sans-serif;
+  font-weight:900;
+  background: rgb(24, 26, 27);
 }
 nav{
 
