@@ -1,7 +1,7 @@
 body{
   font-family: 'Inter', sans-serif;
   font-weight:900;
-  background:#131516;
+  background: rgb(24, 26, 27);
 }
 a{
   text-decoration:none;
@@ -16,7 +16,7 @@ a{
 }
 .button{
   padding: 0.7rem;
-  font-size:24px;
+  font-size:16px;
   font-weight:900;
   border-radius:10px;
   background: -webkit-linear-gradient( #fcba21, #f05321);
@@ -26,54 +26,82 @@ a{
 /* Style page content */
 .content {
   margin-left: 200px;
-  margin-top:180px;
-  /* Same as the width of the sidebar */
   padding: 0px 10px 0px 60px;
   color: rgb(45, 130, 243);
+  width: 60vw;
 }
 .portfolio h2{
-  font-size:42px;
+  font-size:52px;
+  margin-top:80px;
 }
+/*---------------------------------------------------------------------------*/
 .projContent{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto) repeat(5, 1fr);
+  grid-template-rows: repeat(4, min-content);
   grid-gap:1px;
   z-index:1;
   align-items:center;
-  margin-bottom:80px;
+  margin-bottom:110px;
+  width:40vw;
 }
-.projTitle{
-  grid-column:1/2;
+.projContent h4{
+  font-size:14px;
+  font-weight:400;
+  grid-column:1/6;
   grid-row:1;
   margin-bottom:0px;
+  margin-top:0px;
+  background: -webkit-linear-gradient( #fcba21, #f05321);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projTitle{
+  grid-column:1/4;
+  grid-row:2;
+  margin-bottom:0px;
+  margin-top:0px;
   font-size:24px;
   color:#818181;
 }
 .projDesc{
-  margin-top:0px;
+  margin-top:30px;
   display:block;
-  grid-column:1/5;
-  grid-row:2;
+  grid-column:1/7;
+  grid-row:3;
   background:#112240;
-  padding:0.7rem;
+  padding:0.5rem 1rem 0.5rem 1.5rem;
   border-radius:1px;
   font-weight:400;
   letter-spacing:-0.02rem;
   font-size:14px;
   z-index:3;
   position:relative;
-}
-.projImg{
-  grid-column:4/8;
-  grid-row:1/4;
-  z-index:2;
+  width: 85%;
 }
 .projKeywords{
-  grid-column:1/4;
-  grid-row:3;
+  grid-column:1/6;
+  grid-row:4;
   z-index:3;
   color:#818181;
+}
+.projImg{
+  grid-column:6/9;
+  grid-row:1/5;
+  z-index:2;
+  background: rgba(255,0,0,0.3);
+  opacity:1;
+  transition:0.5s;
+}
+.projImg img{
+  display: block;
+}
+.projImg:hover{
+  opacity:0.5;
+}
+.projImg img onclick**********************************open pop-up with projStory
+.projStory{
+
 }
 .skills{
   margin:120px 10px 0px 200px;
@@ -98,7 +126,7 @@ a{
 .langLogos * {
   padding:0.25rem 0.5rem 0.25rem 0.5rem;
 }
-/*-----------------------------------------------------------------*/
+/*---------------------------------------------------*/
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -107,7 +135,8 @@ a{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #232323; /* Black */
+  background-color: #232323;
+  background-color: #131516;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 }
@@ -147,6 +176,9 @@ a{
 }
 /*-----------------------------------------------------------------*/
 /*The About Me section*/
+.about{
+  margin-top:180px;
+}
 .aboutMe{
   color: rgb(45, 130, 243);
   margin-left:40px;
@@ -154,7 +186,7 @@ a{
 .aboutMe h1 {
   margin-top:0;
   margin-bottom:0;
-  font-size:16px;
+  font-size:18px;
   letter-spacing:0.3rem;
   font-weight:600;
 }
@@ -179,3 +211,4 @@ a{
   letter-spacing:-0.0rem;
   color: #818181;
 }
+/*-------------Shrink the Portfolio Projects on smaller screens---------------*/
