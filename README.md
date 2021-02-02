@@ -1,7 +1,4 @@
-##Some industry vernacular for your projectStory & Cover Letter
 
-```
-    ...Implemented resolution dependent layouts
 ```
 
 ##Some Tips for Advanced CSS
