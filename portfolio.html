@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styleTablet.css">
   <link rel="stylesheet" href="styleMobile.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="hamburger.css">
 </head>
 <body>
   <!-- Figure how to integrate new html layout with dsktp style file
@@ -27,30 +28,21 @@
       <a href="/about.html">Contact</a>
     </div>
   -->
-  <nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      <!--
-      Some spans to act as a hamburger..
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      <!--
-      The menu has to be inside of the button
-      it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="/about.html"><li>About</li></a>
-        <a href="/portfolio.html"><li>Portfolio</li></a>
-        <a href="#skills.html"><li>Skills</li></a>
-        <a href="#contact.html"><li>Contact</li></a>
-      </ul>
-    </div>
+  <input id="burger" type="checkbox" />
+
+  <label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
   <!-- Main Content -->
   <main>

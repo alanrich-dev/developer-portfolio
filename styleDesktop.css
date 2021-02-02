@@ -62,28 +62,20 @@ a{
   margin-left:16px;
   margin-bottom:0px;
 }
-.skills h3{
-  margin-top:14px;
-  font-size:16px;
-  letter-spacing: 0.15rem;
-  margin-left:20px;
-  color: #818181;
-}
 /*------------------------------End Skills Page-------------------------------*/
 /*--------------------------------About Page----------------------------------*/
 .about{
-  padding: 200px 10px 0px 100px;
   color: rgb(45, 130, 243);/*blue*/
   width: 60vw;
 }
-.about h1 {
+.about h4 {
   margin-top:0;
   margin-bottom:0;
   font-size:18px;
   letter-spacing:0.3rem;
   font-weight:600;
 }
-.about h2 {
+.about h1 {
   margin-top:0;
   margin-bottom:0;
   margin-left:-5px;
@@ -109,9 +101,9 @@ a{
 .portfolio{
   padding:0 0 0 3.3rem;
 }
-.portfolio h2{
+main h2{
   font-size:52px;
-  margin-top:80px;
+  margin-top:120px;
   color: #0bfde4;
 }
 .projContent{
@@ -144,7 +136,7 @@ a{
   color:#232323;
   background: #0bfde4;
   border-radius:5px;
-  z-index:4;
+  z-index:2;
 }
 
 .projDesc{
@@ -157,7 +149,7 @@ a{
   font-weight:400;
   letter-spacing:-0.02rem;
   font-size:14px;
-  z-index:3;
+  z-index:2;
   position:relative;
   width: 85%;
   background:#112240;

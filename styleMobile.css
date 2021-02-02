@@ -1,74 +1,106 @@
 @media screen and (max-width: 599px){
-  *{
-    /*box-sizing:border-box experiment, see if you like this*/
-    background-repeat: no-repeat;
-  }
-  html{
-    font-size:16px;
-    height:100vh;
-    width:100vw;
-    background:rgb(24, 26, 27);
-    display:block;
-  }
-  html,body{
-    min-height:101%;/*renders scroll bar on every page, maintaing uniform width*/
-  }
-  body{
-    margin:0;
-    padding:0;
-    height:100%;
-    font-family: 'Inter', sans-serif;
-    font-weight:900;
-  }
-  main{
-    display:block;
-    margin-top:24vw;
-  }
-  main h2{
-    font-size:38px;
-    color:#0bfde4;
-    width:96vw;
-    margin:0 0 40px 4vw;
-  }
-  a{
-    text-decoration:none;
-  }
-  .button{
-    padding: 0.7rem;
-    border-radius:10px;
-    background: -webkit-linear-gradient( #fcba21, #f05321);
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: #232323;
-  }
+*{
+  /*box-sizing:border-box experiment, see if you like this*/
+  background-repeat: no-repeat;
+}
+html{
+  font-size:16px;
+  height:100vh;
+  width:100vw;
+  background:rgb(24, 26, 27);
+  display:block;
+}
+html,body{
+  min-height:101%;/*renders scroll bar on every page, maintaing uniform width*/
+}
+body{
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: 'Inter', sans-serif;
+  font-weight:900;
+}
+main{
+  display:block;
+  margin-top:28vw;
+}
+main h2{
+  font-size:36px;
+  color:#818181;
+  width:96vw;
+  margin:0 0 8vw 2vw;
+}
+a{
+  text-decoration:none;
+}
+.button{
+  padding: 0.7rem;
+  border-radius:10px;
+  background: -webkit-linear-gradient( #fcba21, #f05321);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #232323;
+}
+
 /*----------------------------- End Global Styles ----------------------------*/
 /*---------------------------Page Content Sections----------------------------*/
 /*----------------------------------------------------------------------------*/
 /*--------------------------------Skills Page---------------------------------*/
 .skills{
-
+  margin:8rem 0 0 0.3rem;
 }
 .skills h2{
-
+  font-size:35px;
+  margin-left:;
 }
-.skills h3{
-
+#vim{
+  height:96px;
+  width:96px;
+}
+#webpack{
+  height:96px;
+  width:96px;
+}
+.langLogos{
+  margin-top:2rem;
+}
+.langLogos * {
+  padding:0.25rem 0.5rem 0.25rem 0.5rem;
 }
 /*------------------------------End Skills Page-------------------------------*/
 /*--------------------------------About Page----------------------------------*/
 .about{
-
+  color: rgb(45, 130, 243);/*blue*/
+  width: 90vw;
+  vertical-align:center;
+  margin:16vh auto;
+}
+.about h4 {
+  margin-top:0;
+  margin-bottom:0;
+  font-size:18px;
+  letter-spacing:0.3rem;
+  font-weight:600;
 }
 .about h1 {
-
-}
-.about h2 {
-
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:-5px;
+  font-size:80px;
+  letter-spacing:-0.05rem;
+  color: #818181;
 }
 .about h3 {
-
+  margin-top:0;
+  margin-bottom:0;
+  font-size: 32px;
+  letter-spacing: 0.2rem;
 }
 .about p {
-
+  margin-top:10px;
+  margin-bottom:40px;
+  font-weight:400;
+  letter-spacing:-0.03rem;
+  color: #818181;
 }
 /*------------------------------End About Page--------------------------------*/
 /*------------------------------Portfolio Page--------------------------------*/
@@ -83,19 +115,21 @@
 .projTitle *{
   border-radius:3px;
   display: block;
-  background-color: #0bfde4;
-  color: #232323;
+  background-color: #2d82f3;
+  color: white;
   font-size: 1.5em;
   padding: 1rem 1rem;
   text-decoration: none;
   letter-spacing:0.2rem;
-  border-bottom: 0.25em solid #1bccba;
+  border-bottom: 0.25em solid #154587;
+  border-bottom: 0.25em solid #2367c2;
   -moz-transition: 0.1s;
   -webkit-transition: 0.1s;
   transition: 0.1s;
   box-shadow: 0 2px 3px #232323;
   position: relative;
   margin-bottom:0;
+  text-shadow: 1px 2px 2px #232323;
 }
 
 .projTitle:hover {
@@ -109,10 +143,12 @@
   padding:;
   font-weight:600;
   letter-spacing:0.01rem;
+  color:#2d82f3;
 }
 .projKeywords *{
   width:96vw;
   margin:1rem auto;
+  color:#818181;
 }
 .projImg {
 margin-top:0;
@@ -131,163 +167,8 @@ width:98vw;
 /*------------------------------End PortfolioPage-----------------------------*/
 /*------------------------------------Menu------------------------------------*/
 /* menu icon */
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
 
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
 /*--------------------------------End Menu------------------------------------*/
-/*------------------------------Logo Styles---------------------------------*/
-#vim{
-  height:96px;
-  width:96px;
-}
-#webpack{
-  height:96px;
-  width:96px;
-}
-.langLogos{
-  margin-top:40px;
-}
-.langLogos * {
-  padding:0.25rem 0.5rem 0.25rem 0.5rem;
-}
 /*----------------------@media Outer Bracket----------------------------------*/
 }
 /*----------------------@media Outer Bracket----------------------------------*/
