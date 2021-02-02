@@ -124,6 +124,7 @@ a{
   margin-bottom:110px;
   width:40vw;
 }
+/*
 .projContent h4{
   font-size:14px;
   font-weight:400;
@@ -133,6 +134,7 @@ a{
   margin-top:0px;
   color: rgb(45, 130, 243);
 }
+*/
 .projTitle{
   grid-column:1/4;
   grid-row:2;
@@ -141,10 +143,10 @@ a{
   font-size:24px;
   color:#232323;
   background: #0bfde4;
-  padding:0.5rem;
   border-radius:5px;
   z-index:4;
 }
+
 .projDesc{
   margin-top:20px;
   display:block;
@@ -203,16 +205,14 @@ a{
 }
 /*------------------The navigation menu links---------------------------------*/
 .menu > * {
-  padding: 6px 8px 6px 30px;
   text-decoration: none;
   font-size: 28px;
   display: block;
   color:#0bfde4;
 }
 .menu > a{
+  padding: 6px 8px 6px 30px;
   font-size:14px;
-  margin-left:10px;
-  color:rgb(45, 130, 243);
   color:#0bfde4;
 }
 .menu > h3{

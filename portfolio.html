@@ -14,53 +14,63 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 </head>
 <body>
-  <!-- Side navigation -->
-  <div class="menu">
-    <a href="/portfolio.html">
-      <img src="https://img.icons8.com/fluent/48/000000/venn-diagram.png"/>
-    </a>
-    <h3>alan rich</h3>
-    <h2>Web Developer</h2>
-    <a href="/portfolio.html">Portfolio</a>
-    <a href="/skills.html">Skills</a>
-    <a href="/about.html">About</a>
-    <a href="/about.html">Contact</a>
-  </div>
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      <!--
+      Some spans to act as a hamburger..
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <!--
+      The menu has to be inside of the button
+      it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="/about.html"><li>About</li></a>
+        <a href="/portfolio.html"><li>Portfolio</li></a>
+        <a href="#skills.html"><li>Skills</li></a>
+        <a href="#contact.html"><li>Contact</li></a>
+      </ul>
+    </div>
+  </nav>
   <!-- Main Content -->
-  <main class="portfolio">
+  <main>
       <h2>Products I've Built</h2>
-      <div class='projContent'>
-        <h4>Featured Project</h4>
-        <a href="http://myparisreview.org">
-          <h3 class='projTitle'>MyParisReview.org</h3>
+      <div class='project'>
+        <a class='projTitle' href="http://myparisreview.org">
+          <h3>MyParisReview.org</h3>
         </a>
-        <div class="projDesc">
-          <p>For subscribers of The Paris Review. Search the archives with functionality not available on theparisreview.org and maintain a library of stories read.</p>
-        </div>
         <div class="projImg">
           <a href="http://myparisreview.org">
             <img src="/myparisreview.jpg" alt="">
           </a>
         </div>
+        <a class="projDesc" href="http://myparisreview.org">
+          <p>For subscribers of The Paris Review. Search the archives with functionality not available on theparisreview.org and maintain a library of stories read.</p>
+        </a>
         <div class="projKeywords">
           <p>JS, Node, Express</p>
         </div>
       </div>
-      <div class='projContent'>
-        <h4>Featured Project</h4>
-        <a href="http://louise.kerrad.com">
-          <h3 class='projTitle'>LouiseKerrad.com</h3>
+      <div class='project'>
+      <!--  <h4>Featured Project</h4> -->
+        <a class='projTitle' href="http://louise.kerrad.com">
+          <h3>LouiseKerrad.com</h3>
         </a>
-        <div class="projDesc">
-          <p>
-            A children's website for displaying art projects. Contains authentication and CRUD functionality.
-          </p>
-        </div>
         <div class="projImg">
           <a href="http://louisekerrad.com">
             <img src="/louisekerrad.jpg" alt="">
           </a>
         </div>
+        <a class="projDesc" href="http://louisekerrad.com">
+          <p>A children's website for displaying art projects and manga writings. Contains authentication, CRUD functionality and the ability to upload content.</p>
+        </a>
         <div class="projKeywords">
           <p>HTML, CSS, JS</p>
         </div>
