@@ -27,6 +27,31 @@
     <a href="/about.html">Contact</a>
   </div>
 -->
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    <!--
+    Some spans to act as a hamburger..
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    <!--
+    The menu has to be inside of the button
+    it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="/about.html"><li>About</li></a>
+      <a href="/portfolio.html"><li>Portfolio</li></a>
+      <a href="#skills.html"><li>Skills</li></a>
+      <a href="#contact.html"><li>Contact</li></a>
+    </ul>
+  </div>
+</nav>
   <!--Index.html will be About Page with clear links to portfolio -->
   <main>
       <div class="about aboutMe">
