@@ -107,14 +107,12 @@ a{
 /*------------------------------End About Page--------------------------------*/
 /*------------------------------Portfolio Page--------------------------------*/
 .portfolio{
-  padding:0 0 0 100px;
+  padding:0 0 0 3.3rem;
 }
 .portfolio h2{
   font-size:52px;
   margin-top:80px;
-  background: -webkit-linear-gradient( #fcba21, #f05321);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0bfde4;
 }
 .projContent{
   display: grid;
@@ -141,10 +139,8 @@ a{
   margin-bottom:0px;
   margin-top:10px;
   font-size:24px;
-  color:#818181;
-  background: -webkit-linear-gradient( #fcba21, #f05321);
-  -webkit-background-clip: border-box;
-  -webkit-text-fill-color: #232323;
+  color:#232323;
+  background: #0bfde4;
   padding:0.5rem;
   border-radius:5px;
   z-index:4;
@@ -200,9 +196,7 @@ a{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background: -webkit-linear-gradient( #fcba21, #f05321);
-  -webkit-background-clip: border-box;
-  -webkit-text-fill-color: #232323;
+  background:#232323;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
 
@@ -213,12 +207,13 @@ a{
   text-decoration: none;
   font-size: 28px;
   display: block;
-  color:#818181
+  color:#0bfde4;
 }
 .menu > a{
   font-size:14px;
   margin-left:10px;
-  color:rgb(45, 130, 243)
+  color:rgb(45, 130, 243);
+  color:#0bfde4;
 }
 .menu > h3{
   padding: 0px 8px 0px 30px;
