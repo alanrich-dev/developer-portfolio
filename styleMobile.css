@@ -1,0 +1,174 @@
+@media screen and (max-width: 599px){
+*{
+  /*box-sizing:border-box experiment, see if you like this*/
+  background-repeat: no-repeat;
+}
+html{
+  font-size:16px;
+  height:100vh;
+  width:100vw;
+  background:rgb(24, 26, 27);
+  display:block;
+}
+html,body{
+  min-height:101%;/*renders scroll bar on every page, maintaing uniform width*/
+}
+body{
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: 'Inter', sans-serif;
+  font-weight:900;
+}
+main{
+  display:block;
+  margin-top:28vw;
+}
+main h2{
+  font-size:36px;
+  color:#818181;
+  width:96vw;
+  margin:0 0 8vw 2vw;
+}
+a{
+  text-decoration:none;
+}
+.button{
+  padding: 0.7rem;
+  border-radius:10px;
+  background: -webkit-linear-gradient( #fcba21, #f05321);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #232323;
+}
+
+/*----------------------------- End Global Styles ----------------------------*/
+/*---------------------------Page Content Sections----------------------------*/
+/*----------------------------------------------------------------------------*/
+/*--------------------------------Skills Page---------------------------------*/
+.skills{
+  margin:8rem 0 0 0.3rem;
+}
+.skills h2{
+  font-size:35px;
+  margin-left:;
+}
+#vim{
+  height:96px;
+  width:96px;
+}
+#webpack{
+  height:96px;
+  width:96px;
+}
+.langLogos{
+  margin-top:2rem;
+}
+.langLogos * {
+  padding:0.25rem 0.5rem 0.25rem 0.5rem;
+}
+/*------------------------------End Skills Page-------------------------------*/
+/*--------------------------------About Page----------------------------------*/
+.about{
+  color: rgb(45, 130, 243);/*blue*/
+  width: 90vw;
+  vertical-align:center;
+  margin:16vh auto;
+}
+.about h4 {
+  margin-top:0;
+  margin-bottom:0;
+  font-size:18px;
+  letter-spacing:0.3rem;
+  font-weight:600;
+}
+.about h1 {
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:-5px;
+  font-size:80px;
+  letter-spacing:-0.05rem;
+  color: #818181;
+}
+.about h3 {
+  margin-top:0;
+  margin-bottom:0;
+  font-size: 32px;
+  letter-spacing: 0.2rem;
+}
+.about p {
+  margin-top:10px;
+  margin-bottom:40px;
+  font-weight:400;
+  letter-spacing:-0.03rem;
+  color: #818181;
+}
+/*------------------------------End About Page--------------------------------*/
+/*------------------------------Portfolio Page--------------------------------*/
+.project{
+  height:60vh;
+  width:99vw;
+  background:#232323;
+  margin-bottom:40px;
+}
+.projTitle{
+}
+.projTitle *{
+  border-radius:3px;
+  display: block;
+  background-color: #2d82f3;
+  color: white;
+  font-size: 1.5em;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  letter-spacing:0.2rem;
+  border-bottom: 0.25em solid #154587;
+  border-bottom: 0.25em solid #2367c2;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  box-shadow: 0 2px 3px #232323;
+  position: relative;
+  margin-bottom:0;
+  text-shadow: 1px 2px 2px #232323;
+}
+
+.projTitle:hover {
+  background-color: #1e9feb;
+  border-bottom-width: 0;
+  margin-top: 0.2em;
+}
+.projDesc *{
+  width:96vw;
+  margin:5px auto;
+  padding:;
+  font-weight:600;
+  letter-spacing:0.01rem;
+  color:#2d82f3;
+}
+.projKeywords *{
+  width:96vw;
+  margin:1rem auto;
+  color:#818181;
+}
+.projImg {
+margin-top:0;
+}
+.projImg img{
+width:98vw;
+
+}
+.projImg:hover{
+
+}
+.projImg img onclick***********open pop-up with projStory
+.projStory{
+
+}
+/*------------------------------End PortfolioPage-----------------------------*/
+/*------------------------------------Menu------------------------------------*/
+/* menu icon */
+
+/*--------------------------------End Menu------------------------------------*/
+/*----------------------@media Outer Bracket----------------------------------*/
+}
+/*----------------------@media Outer Bracket----------------------------------*/
