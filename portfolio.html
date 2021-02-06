@@ -7,27 +7,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styleDesktop.css">
-  <link rel="stylesheet" href="styles/styleLrgDsktp.css">
-  <link rel="stylesheet" href="styles/styleTablet.css">
-  <link rel="stylesheet" href="styles/styleMobile.css">
+  <link rel="stylesheet" href="/src/styles/styleDesktop.css">
+  <link rel="stylesheet" href="/src/styles/styleTablet.css">
+  <link rel="stylesheet" href="/src/styles/styleMobile.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-  <link rel="stylesheet" href="styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/hamburger.css">
 </head>
 <body>
-  <!-- Figure how to integrate new html layout with dsktp style file
-    <div class="menu">
-      <a href="/portfolio.html">
-        <img src="https://img.icons8.com/fluent/48/000000/venn-diagram.png"/>
-      </a>
-      <h3>alan rich</h3>
-      <h2>Web Developer</h2>
-      <a href="/portfolio.html">Portfolio</a>
-      <a href="/skills.html">Skills</a>
-      <a href="/about.html">About</a>
-      <a href="/about.html">Contact</a>
-    </div>
-  -->
   <input id="burger" type="checkbox" />
 
   <label for="burger">
@@ -45,41 +31,38 @@
     </ul>
   </nav>
   <!-- Main Content -->
-  <main>
+  <main class='portfolio'>
+
       <h2>Products I've Built</h2>
+
       <div class='project'>
-        <a class='projTitle' href='http://myparisreview.org'>
-          <h3>MyParisReview.org</h3>
-        </a>
-        <div class='projImg'>
-          <a target='_blank'href='http://myparisreview.org'>
-            <img src='/myparisreview.jpg' alt=''>
+
+          <a class='projTitle' href='http://myparisreview.org'>
+            <h3>MyParisReview.org</h3>
           </a>
+
+          <div class='projImg'>
+             <a href='http://myparisreview.org'>
+               <img src='/media/louisePortfolio(1).png' alt=''>
+             </a>
+          </div>
+
         </div>
-        <a class='projDesc'target='_blank'href='http://myparisreview.org'>
-          <p>For subscribers of The Paris Review. Search the archives with functionality not available on theparisreview.org and maintain a library of stories read.</p>
-        </a>
-        <div class='projKeywords'>
-          <p>JS, Node, Express</p>
-        </div>
-      </div>
+
       <div class='project'>
-      <!--  <h4>Featured Project</h4> -->
-        <a class='projTitle'target='_blank'href='http://louise.kerrad.com'>
-          <h3>LouiseKerrad.com</h3>
-        </a>
-        <div class='projImg'>
-          <a target='_blank'href='http://louisekerrad.com'>
-            <img src='/louisekerrad.jpg' alt=''>
-          </a>
-        </div>
-        <a class='projDesc' target='_blank'href='http://louisekerrad.com'>
-          <p>A children's website for displaying art projects and manga writings. Contains authentication, CRUD functionality and the ability to upload content.</p>
-        </a>
-        <div class='projKeywords'>
-          <p>HTML, CSS, JS</p>
-        </div>
+
+         <a class='projTitle'href='http://louise.kerrad.com'>
+           <h3>LouiseKerrad.com</h3>
+         </a>
+
+         <div class='projImg'>
+            <a target='_blank'href='http://louisekerrad.com'>
+             <img src='/media/louisePortfolio.png' alt=''>
+            </a>
+         </div>
+
       </div>
+
   </main>
 </body>
 </html>
