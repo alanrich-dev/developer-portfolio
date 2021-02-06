@@ -39,9 +39,10 @@ a{
   font-size:16px;
   font-weight:900;
   border-radius:10px;
-  background: -webkit-linear-gradient( #fcba21, #f05321);
+  background: linear-gradient(#a8c0ff, #3f2b96);
   -webkit-background-clip: border-box;
-  -webkit-text-fill-color: #232323;
+  -webkit-text-fill-color: white;
+  text-shadow:;
 }
 /*----------------------------- End Global Styles ----------------------------*/
 
@@ -66,8 +67,13 @@ a{
 /*--------------------------------About Page----------------------------------*/
 .about{
   color: rgb(45, 130, 243);/*blue*/
-  width: 60vw;
+  width:;
   max-width:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:start;
+  margin:-6vh auto;
 }
 .about h4 {
   margin-top:8vh;
@@ -83,6 +89,9 @@ a{
   font-size:68px;
   letter-spacing:-0.05rem;
   color: #818181;
+  background: -webkit-linear-gradient( #a8c0ff, #3f2b96);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 .about h3 {
   margin-top:0;
@@ -115,32 +124,39 @@ a{
   margin: 14vh auto 0 6vw;
 }
 .project{
-  background:#232323;
+  background: linear-gradient(to left, #d3cce3, #e9e4f0);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: white;
   width:80vw;
   max-width;788px;
   max-height:62vh;
   padding-bottom:12vh;
+  padding-top:4vh;
   border-radius:3px;
   margin-bottom:12vh;
   display:flex;
   flex-direction:column;
   align-self:center;
+  justify-content:center;
 }
 .projTitle{
   font-size:24px;
   color:#818181;
   align-self:flex-end;
-  padding:0rem 3vw 0rem 0rem;
+  padding-right: 3vw;
+  
 }
 .projImg{
   opacity:1;
   transition:0.5s;
   align-self:center;
+  max-height:90%;
 }
 .projImg img{
   display: block;
   color: #16ADE3;
   width:70vw;
+  height:100%;
 }
 .projImg:hover{
   opacity:0.5;
