@@ -17,6 +17,7 @@ html{
   height:100%;
   width:100%;
   background:rgb(24, 26, 27);
+  overflow-x: hidden;
 }
 html,body{
   min-height:101%;/*renders scroll bar on every page, maintaing uniform width*/
@@ -120,7 +121,9 @@ a{
 }
 .headline{
   font-size:8vh;
-  color:#818181;
+  background: linear-gradient(to left, #d3cce3, #e9e4f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 14vh auto 0 6vw;
 }
 .project{
@@ -131,7 +134,7 @@ a{
   max-width;788px;
   max-height:62vh;
   padding-bottom:12vh;
-  padding-top:4vh;
+  padding-top:;
   border-radius:3px;
   margin-bottom:12vh;
   display:flex;
@@ -141,10 +144,12 @@ a{
 }
 .projTitle{
   font-size:24px;
+  letter-spacing:0.1rem;
   color:#818181;
   align-self:flex-end;
   padding-right: 3vw;
-  
+  padding-top:;
+
 }
 .projImg{
   opacity:1;

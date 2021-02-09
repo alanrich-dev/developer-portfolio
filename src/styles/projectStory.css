@@ -1,0 +1,32 @@
+.xyz{
+  color:white;
+  margin:10vh auto auto 4vw;
+  font-size:8vh
+}
+.projectStory{
+  width:100vw;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  color:white;
+  margin-top:12vh;
+}
+.projectStory h1{
+  font-size:8vh;
+}
+.projectStory h2{
+  font-size:6vh;
+}
+
+.projectStory p{
+  line-height:2rem;
+  width:76vw;
+  max-width:626px;
+  font-weight:400;
+  letter-spacing:0.05rem;
+
+
+}
+.projectStory img{
+  border-radius:3px;
+}

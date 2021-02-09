@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/src/styles/styleMobile.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="/src/styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/projectStory.css">
 </head>
 <body>
   <input id="burger" type="checkbox" />
@@ -24,26 +25,27 @@
 
   <nav>
     <ul>
-      <li><a href="/index.html">About</a></li>
-      <li><a href="/portfolio.html">Portfolio</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/index.html">ABOUT</a></li>
+      <li><a href="/portfolio.html">PORTFOLIO</a></li>
+      <li><a href="skills.html">SKILLS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
   <main class='projectStory'>
-    <h2>My Paris Review</h2>
+    <h1>My Paris Review</h1>
+    <h4>Lorem Ipsum * more text * 2020</h4>
     <div>
       <img src="" alt=""> <!--Or a video-->
     </div>
     <h2>The Problem</h2>
-    <p> </p>
+    <p><i>The Paris Review</i> website doesn't provide subscribers with much utility. Their is no way to keep track of stories you've read or exclude them from new searches. Keeping track of stories read would be a nice feature for the subscribers who like to read the archives. Having a community of subscribers who can recommend good stories would also be a nice feature.</p>
     <h2>The Solution</h2>
-    <p></p>
+    <p>An app where subscribers can search the entire collection of titles from <i>theparisreview.org</i> archives and have some options with the results. Users should be able to navigate to a story's url, read story summaries submitted from other app users and add the story to their collection of currently reading or read. Users can also tag stories in their collection as recommended.</p>
     <!--Insert Images of project -->
     <h2>The Plan</h2>
-    <p></p>
+    <p>I first focused on the data structures, deciding on a NoSQL database of three collections. A collection of stories for each user. A global collection of stories that users query by various parameters. And a global collection of story summaries. Entries in each collection sharing the same title received a shared 4 digit identifier.<br><br> Next up was acquiring the database of titles from <i>theparisreview.org</i>. The structure of the website made scraping the urls quite simple. All fiction stories are listed under a directory named fiction and assigned a 4 digit url parameter corresponding to the sequence of published stories with 0001 being the first story published in <i>The Paris Review</i>.<br><br>Once I had the array of URLs I mapped a new array of objects containing the key value pairs that would suffice for my uses' query requirements. This array served as the collection of searchable stories.</p>
     <!--Insert Images of project -->
   </main>
 </body>
