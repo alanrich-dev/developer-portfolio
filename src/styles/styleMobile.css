@@ -51,24 +51,26 @@ a{
 
 /*--------------------------------About Page----------------------------------*/
 .about{
-  margin:13rem 4px auto 4px;
+  margin:13rem auto;
   height:;
   width:96vw;
   color: rgb(45, 130, 243);
   display:flex;
   flex-direction:column;
+  justify-content:start;
+  align-items:
 
 }
 .about h4 {
-  margin:0 auto 1.5rem 3px;
-  font-size:20px;
+  margin:0 auto 1.2rem 0;
+  font-size:5.25vw;
   letter-spacing:0.3rem;
   font-weight:600;
   color:#3c9df4;
 }
 .about h1 {
-  margin:0;
-  font-size:5.2rem;
+  margin:0 auto 0 -3px;
+  font-size:21.25vw;
   letter-spacing:-0.02rem;
   color: #818181;
   /*background: -webkit-linear-gradient( #a8c0ff, #3f2b96);*/
@@ -82,8 +84,9 @@ a{
     -webkit-text-fill-color: transparent;
 }
 .about h3 {
-  margin:0;
-  font-size: 31px;
+  margin-top:0.5rem;
+  margin-bottom:0;
+  font-size: 7.8vw;
   letter-spacing: -0.05rem;
   color:#3c9df4;
 }
