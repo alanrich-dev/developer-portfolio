@@ -34,8 +34,7 @@ a{
 }
 .button{
   padding: 0.7rem;
-  font-size:16px;
-  font-weight:900;
+  font-size:1rem;
   border-radius:10px;
   background: linear-gradient(#a8c0ff, #3f2b96);
   -webkit-background-clip: border-box;
