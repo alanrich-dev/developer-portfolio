@@ -40,9 +40,9 @@
       <img src="" alt=""> <!--Or a video-->
     </div>
     <h2>The Problem</h2>
-    <p><i>The Paris Review</i> website doesn't provide subscribers with much utility. Their is no way to keep track of stories you've read or exclude them from new searches. Keeping track of stories read would be a nice feature for the subscribers who like to read the archives. Having a community of subscribers who can recommend good stories would also be a nice feature.</p>
+    <p><i>The Paris Review</i> website lacks utility. Their is no way to keep track of stories you've read or exclude them from new searches.</p>
     <h2>The Solution</h2>
-    <p>An app where subscribers can search the entire collection of titles from <i>theparisreview.org</i> archives and have some options with the results. Users should be able to navigate to a story's url, read story summaries submitted from other app users and add the story to their collection of currently reading or read. Users can also tag stories in their collection as recommended.</p>
+    <p>An app that searches the archives of <i>theparisreview.org</i> while excluding the titles in your library from results.</p>
     <!--Insert Images of project -->
     <h2>The Plan</h2>
     <p>I first focused on the data structures, deciding on a NoSQL database of three collections. A collection of stories for each user. A global collection of stories that users query by various parameters. And a global collection of story summaries. Entries in each collection sharing the same title received a shared 4 digit identifier.<br><br> Next up was acquiring the database of titles from <i>theparisreview.org</i>. The structure of the website made scraping the urls quite simple. All fiction stories are listed under a directory named fiction and assigned a 4 digit url parameter corresponding to the sequence of published stories with 0001 being the first story published in <i>The Paris Review</i>.<br><br>Once I had the array of URLs I mapped a new array of objects containing the key value pairs that would suffice for my uses' query requirements. This array served as the collection of searchable stories.</p>
