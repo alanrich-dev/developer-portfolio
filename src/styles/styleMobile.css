@@ -115,25 +115,31 @@ a{
 }
 /*------------------------------Portfolio Page--------------------------------*/
 .portfolio{
-  margin-top:;
+  margin-top:4rem;
   padding:0rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
 }
 .portfolio h2{
-  font-size:52px;
+  font-size:8vw;
+  margin-left:-34px;
   color:#818181;
-  margin-left:-30vw;
-  margin-bottom:3vh;
+  margin-left:;
+  margin-bottom:5vh;
 }
 .project{
   background:#232323;
   width:80vw;
+  height:60vh;
   border-radius:3px;
   margin-bottom:3vh;
   display:flex;
   flex-direction:column;
 }
 .projTitle{
-  font-size:24px;
+  font-size:4vw;
   color:#818181;
   align-self:flex-end;
   padding:0rem 3vw 0rem 0rem;
