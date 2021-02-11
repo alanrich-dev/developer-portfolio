@@ -52,21 +52,21 @@ a{
 
 /*--------------------------------About Page----------------------------------*/
 .about{
-  margin-top:10rem;
+  margin:13rem 5px;
   height:;
   width:;
   color: rgb(45, 130, 243);
 
 }
 .about h4 {
-  margin:0 auto auto 1px;
-  font-size:18px;
+  margin:0 auto auto 3px;
+  font-size:20px;
   letter-spacing:0.3rem;
   font-weight:600;
   color:#3c9df4;
 }
 .about h1 {
-  margin:0 auto auto -3px;
+  margin:0;
   font-size:5.6rem;
   letter-spacing:-0.02rem;
   color: #818181;
@@ -87,14 +87,14 @@ a{
   color:#3c9df4;
 }
 .about p {
-  margin:0 2px auto 0;
+  margin:1rem 2px auto 0;
   font-weight:400;
   font-size:1rem;
   letter-spacing:;
   color: #818181;
 }
 .button{
-  margin:0 ;
+  margin:2rem 0;
   padding: 0.5rem 1rem;
   font-size:1rem;
   border-radius:10px;
