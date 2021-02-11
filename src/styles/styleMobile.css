@@ -55,15 +55,6 @@ a{
   margin-top:10rem;
   height:;
   width:;
-  display:grid;
-  grid-template-columns: 1vw 96vw 3vw;
-  grid-template-rows:4vh 11.2vh 6vh 12vh 6vh;
-  grid-template-areas:
-  '. h4 .'
-  '. h1 .'
-  '. h3 .'
-  '. p  .'
-  '. a  .';
   color: rgb(45, 130, 243);
 
 }
@@ -72,19 +63,17 @@ a{
   font-size:18px;
   letter-spacing:0.3rem;
   font-weight:600;
-  grid-area:h4;
   color:#3c9df4;
 }
 .about h1 {
   margin:0 auto auto -3px;
-  font-size:4.8rem;
+  font-size:5.6rem;
   letter-spacing:-0.02rem;
   color: #818181;
   /*background: -webkit-linear-gradient( #a8c0ff, #3f2b96);*/
   background: -webkit-linear-gradient(#31256a, #313144);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
-  grid-area:h1;
 }
 .about h1 span{
   background: -webkit-linear-gradient( #fcba21, #f05321);
@@ -95,7 +84,6 @@ a{
   margin:0;
   font-size: 31px;
   letter-spacing: -0.1rem;
-  grid-area:h3;
   color:#3c9df4;
 }
 .about p {
@@ -104,7 +92,6 @@ a{
   font-size:1rem;
   letter-spacing:;
   color: #818181;
-  grid-area:p;
 }
 .button{
   margin:0 ;
@@ -116,7 +103,6 @@ a{
   -webkit-background-clip: border-box;
   -webkit-text-fill-color: white;
   text-shadow:;
-  grid-area:a;
   width:max-content;
   display:flex;
   align-items:center;
