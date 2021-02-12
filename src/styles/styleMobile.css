@@ -45,7 +45,6 @@ a{
 /*--------------------------------About Page----------------------------------*/
 .about{
   margin:8rem auto;
-  height:;
   width:90vw;
   color: rgb(45, 130, 243);
   display:flex;
@@ -63,7 +62,7 @@ a{
 }
 .about h1 {
   margin:0 auto 0 -3px;
-  font-size:20vw;
+  font-size:18.5vw;
   letter-spacing:-0.02rem;
   color: #818181;
   background: -webkit-linear-gradient(#31256a, #313144);
