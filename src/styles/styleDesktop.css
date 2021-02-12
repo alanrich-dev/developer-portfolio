@@ -105,6 +105,7 @@ a{
 /*------------------------------End About Page--------------------------------*/
 
 /*------------------------------Portfolio Page--------------------------------*/
+/*
 .portfolio{
   margin-top:6vh;
   margin-bottom:;
@@ -161,6 +162,55 @@ a{
 .projImg:hover{
   opacity:0.5;
 }
+*/
+.portfolio{
+  margin-top:6vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-left:-10px;
+  margin-bottom:6vh;
+}
+.portfolio h2{
+  font-size:8.4vw;
+  color:#818181;
+  margin-bottom:2.5rem;
+  margin-left:-5vw;
+}
+.project{
+  background:#232323;
+  width:80vw;
+  height:;
+  border-radius:5px;
+  margin-bottom:8vh;
+  display:flex;
+  flex-direction:column;
+}
+.shadow{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.projTitle{
+  font-size:4vw;
+  color:#818181;
+  align-self:flex-end;
+  padding-right:1rem;
+}
+.projImg{
+  opacity:1;
+  transition:0.5s;
+  align-self:center;
+}
+.projImg img{
+  display: block;
+  color: #16ADE3;
+  width:70vw;
+  height:26vh;
+  margin-bottom: 4vh;
+}
+.projImg:hover{
+  opacity:0.5;
+}
+
 /*------------------------------End PortfolioPage-----------------------------*/
 /*------------------------------Logo Styles---------------------------------*/
 #vim{
