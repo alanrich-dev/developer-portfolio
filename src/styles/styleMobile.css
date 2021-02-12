@@ -29,19 +29,14 @@ a{
 }
 /*--------------------------------Skills Page---------------------------------*/
 .skills{
-  padding: 100px 10px 0px 60px;
-  color: rgb(45, 130, 243);/*blue*/
-  width: 60vw;
-}
-.skills{
-  margin:120px 10px 0px 200px;
-  padding-left:60px;
   color: rgb(45, 130, 243);
+
 }
 .skills h2{
-  font-size:42px;
-  margin-left:16px;
-  margin-bottom:0px;
+  font-size:8.8vw;
+  margin-top:18vh;
+  margin-left:4vw;
+  margin-bottom:10vw;
 }
 
 /*--------------------------------About Page----------------------------------*/
@@ -167,7 +162,7 @@ a{
   width:96px;
 }
 .langLogos{
-  margin-top:40px;
+  margin-top:;
 }
 .langLogos * {
   padding:0.25rem 0.5rem 0.25rem 0.5rem;
