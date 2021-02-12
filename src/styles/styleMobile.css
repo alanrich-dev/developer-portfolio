@@ -8,6 +8,9 @@ nav{
   display: flex;
   justify-content: center;
 }
+nav ul{
+  margin-left:-6vw;
+}
 html{
   font-size:16px;
   height:100%;
