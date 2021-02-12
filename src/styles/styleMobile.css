@@ -41,9 +41,9 @@ a{
 
 /*--------------------------------About Page----------------------------------*/
 .about{
-  margin:10rem auto;
+  margin:8rem auto;
   height:;
-  width:96vw;
+  width:90vw;
   color: rgb(45, 130, 243);
   display:flex;
   flex-direction:column;
@@ -52,7 +52,7 @@ a{
 
 }
 .about h4 {
-  margin:0 auto 1.2rem 0;
+  margin:0 auto 1rem 0;
   font-size:5.25vw;
   letter-spacing:0.3rem;
   font-weight:600;
@@ -60,23 +60,17 @@ a{
 }
 .about h1 {
   margin:0 auto 0 -3px;
-  font-size:21.25vw;
+  font-size:20vw;
   letter-spacing:-0.02rem;
   color: #818181;
-  /*background: -webkit-linear-gradient( #a8c0ff, #3f2b96);*/
   background: -webkit-linear-gradient(#31256a, #313144);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
-.about h1 span{
-  background: -webkit-linear-gradient( #fcba21, #f05321);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .about h3 {
   margin-top:0.5rem;
   margin-bottom:0;
-  font-size: 7.8vw;
+  font-size: 7vw;
   letter-spacing: -0.05rem;
   color:#3c9df4;
 }
@@ -84,7 +78,7 @@ a{
   margin:1rem 2px 0 0;
   font-weight:400;
   font-size:1rem;
-  letter-spacing:;
+  letter-spacing:-0.05rem;
   line-height:2rem;
   color: #818181;
   width:96%
