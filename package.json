@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/alanrich-dev/developer-portfolio#readme",
   "dependencies": {
-    "@splidejs/splide": "^2.4.21"
+    
   }
 }
