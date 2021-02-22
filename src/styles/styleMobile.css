@@ -99,15 +99,16 @@ a{
   align-items:center;
 }
 /*------------------------------Portfolio Page--------------------------------*/
-.portfolio{
+#portfolio{
+  margin:auto;
   display: grid;
   width: 100vw;
   grid-template-columns:7vw 39.5vw 7vw 39.5vw 7vw;
   grid-template-rows:30vh 30vh 30vh;
   grid-template-areas:
-  'lm p1 m p2 rm'
-  'lm p3 m p4 rm'
-  'lm p5 m p6 rm';
+  '. p1 . p2 .'
+  '. p3 . p4 .'
+  '. p5 . p6 .';
 }
 #react{
   grid-area:p1;
@@ -122,7 +123,7 @@ a{
   grid-area:p4;
 }
 #res{
-  grid-area:p1;
+  grid-area:p5;
 }
 #domman{
   grid-area:p6;
