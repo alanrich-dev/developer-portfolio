@@ -1,18 +1,17 @@
 @media screen and (min-width:768px){
 /*----------------------------- Global Styles --------------------------------*/
 *{
-  /*box-sizing:border-box experiment, see if you like this*/
+  box-sizing:border-box;
 }
 nav{
-  height:4vh;
-  display: flex;
+  display:flex;
   justify-content: center;
 }
 html{
-  font-size:16px;
+  font-size:10px;
   height:100%;
   width:100%;
-  background:rgb(24, 26, 27);
+  background:white;
   overflow-x: hidden;
 }
 body{
@@ -20,163 +19,139 @@ body{
   width:100%;
   font-family: 'Inter', sans-serif;
   font-weight:900;
+  color:black;
+  background:#fafafa;
 }
-main{
-  height:100vh;
-  width:100vw;
+body h2{
+  font-size: 7rem;
 }
-a{
+body p{
+  font-size:1.8rem;
+  line-height:1.4;
+  font-weight:300;
+}
+body a{
   text-decoration:none;
+  color:inherit;
 }
-.button{
-  padding: 0.7rem;
-  font-size:1rem;
-  border-radius:10px;
-  background: linear-gradient(#a8c0ff, #3f2b96);
-  -webkit-background-clip: border-box;
-  -webkit-text-fill-color: white;
-  text-shadow:;
-}
-/*----------------------------- End Global Styles ----------------------------*/
-
-/*--------------------------------Skills Page---------------------------------*/
-
-.skills{
-  margin:3rem auto;
-  color: rgb(45, 130, 243);
-  width:74vw;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-.skills h2{
-  font-size:3rem;
-}
-.langLogos{
-
-}
-.langLogos * {
-  padding:0.25rem 0.5rem 0.25rem 0.5rem;
-}
-/*------------------------------End Skills Page-------------------------------*/
-
-/*--------------------------------About Page----------------------------------*/
-.about{
-  color: rgb(45, 130, 243);/*blue*/
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:start;
-  margin:auto;
-  max-width:430px;
-}
-.about h4 {
-  margin-top:;
-  margin-bottom:;
-  font-size:18px;
-  letter-spacing:0.3rem;
-  font-weight:600;
-}
-.about h1 {
-  margin-top:0;
-  margin-bottom:0;
-  margin-left:-5px;
-  font-size:68px;
-  letter-spacing:-0.05rem;
-  color: #818181;
-  background: -webkit-linear-gradient( #a8c0ff, #3f2b96);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-.about h3 {
-  margin-top:0;
-  margin-bottom:0;
-  font-size: 32px;
-  letter-spacing: 0rem;
-}
-.about p {
-  margin-top:10px;
-  margin-bottom:40px;
-  font-weight:400;
-  letter-spacing:-0.0rem;
-  color: #818181;
-}
-/*------------------------------End About Page--------------------------------*/
-
-#portfolio{
-  margin:auto;
-  display: grid;
-  width: 100vw;
-  grid-template-columns:7vw 39.5vw 7vw 39.5vw 7vw;
-  grid-template-rows:30vh 30vh 30vh;
-  grid-template-areas:
-  '. p1 . p2 .'
-  '. p3 . p4 .'
-  '. p5 . p6 .';
-  align-items:center;
+#frontPage{
+  margin-top:70px;
+  display:grid;
+  grid-template-columns:11vw 19vw 40vw 19vw 11vw;
+  grid-template-rows:144px 172px 228px;
   justify-items:center;
+  align-items:center;
+  height:572px;
+  width:100%;
+  box-shadow: 0 8px 6px -9px black;
+  background:white;
 }
-#react{
-  grid-area:p1;
+#frontPage img{
+  grid-column:3;
+  grid-row:3;
+  align-self:end;
+  height:578px;
 }
-#webpack{
-  grid-area:p2;
+.frontPageText h2{
+  margin-bottom:8px;
+  font-size:3.6rem;
+  font-weight:900;
+  co
 }
-#api{
-  grid-area:p3;
+.frontPageText p{
+  color:#666666;
+  font-weight:300;
+  margin-top:0;
 }
-#crud{
-  grid-area:p4;
+#aboutText{
+  grid-column:2;
+  grid-row:2;
 }
-#res{
-  grid-area:p5;
+.textDiv{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:auto;
+  width:57vw;
 }
-#domman{
-  grid-area:p6;
+.
+#pt{
+  text-align:center;
+  line-height:1.8;
 }
-.portfolio h2{
-
+#tp{
+  line-height:1.8;
+}
+#portfolioText{
+  grid-column:4;
+  grid-row:2;
+}
+#portfolio{
+  margin-top:100px;
+  display:grid;
+  grid-template-rows:250px 250px;
+  grid-template-columns:33px repeat(3, 1fr) 33px;
+  gap:33px;
+  width:100vw;
+  text-align:center;
+  font-size:4rem;
+  margin-bottom:36px;
 }
 .project{
+  border-radius:5px;
+  background:#eeebd9;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
 }
-.shadow{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.projTitle{
-  font-size:4vw;
-  color:#818181;
-  align-self:flex-end;
-  padding-right:1rem;
-}
-.projImg{
-  opacity:1;
-  transition:0.5s;
-  align-self:center;
-  height:100%;
-  width:100%
-}
-.projImg img{
-  display: block;
-  color: #16ADE3;
-  width:100%;
-  height:100%;
-  margin-bottom: 4vh;
-}
-.projImg:hover{
-  opacity:0.5;
-}
+.project h2{
 
-/*------------------------------End PortfolioPage-----------------------------*/
-/*------------------------------Logo Styles---------------------------------*/
-#vim{
-  height:96px;
-  width:96px;
+}
+#react{
+  grid-row:1;
+  grid-column:2;
 }
 #webpack{
-  height:96px;
-  width:96px;
+  grid-row:1;
+  grid-column:3;
 }
+#crud{
+  grid-row:1;
+  grid-column:4;
 }
-/*----------------------@media Outer Bracket----------------------------------*/
+#api{
+  grid-row:2;
+  grid-column:2;
+}
+#res{
+  grid-row:2;
+  grid-column:3;
+}
+#domman{
+  grid-row:2;
+  grid-column:4;
+}
+footer{
+  margin-top:36px;
+  height:400px;
+  display:grid;
+  grid-template-columns:50vw 50vw;
+  background:#eeebd9;
+  margin-bottom:36px;
+}
+#footer1{
+  grid-column:1;
+  font-size:5rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#footer2{
+  grid-column:2;
+  font-size:7rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
