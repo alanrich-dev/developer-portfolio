@@ -76,6 +76,7 @@ body a{
 #pt{
   text-align:center;
   line-height:1.8;
+  margin-top:0;
 }
 #tp{
   line-height:1.8;
@@ -85,7 +86,7 @@ body a{
   grid-row:2;
 }
 #portfolio{
-  margin-top:100px;
+  margin-top:50px;
   display:grid;
   grid-template-rows:250px 250px;
   grid-template-columns:33px repeat(3, 1fr) 33px;
@@ -102,9 +103,6 @@ body a{
   display:flex;
   align-items:center;
   justify-content:center;
-
-}
-.project h2{
 
 }
 #react{
@@ -175,5 +173,5 @@ footer p{
 }
 footer img{
   height:32px;
-  padding:;
+  margin:2rem;
 }
