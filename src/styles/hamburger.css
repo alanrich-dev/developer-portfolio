@@ -22,11 +22,9 @@ input + label span:first-child {
 input + label span:last-child {
   top: 17px;
 }
-
 label:hover {
   cursor: pointer;
 }
-
 input:checked + label span {
   opacity: 0;
   top: 50%;

@@ -39,8 +39,8 @@ body a{
   display:grid;
   grid-template-columns:11vw 19vw 40vw 19vw 11vw;
   grid-template-rows:144px 172px 228px;
-  justify-items:center;
   align-items:center;
+  justify-items:center;
   height:572px;
   width:100%;
   box-shadow: 0 8px 6px -9px black;
@@ -56,7 +56,6 @@ body a{
   margin-bottom:8px;
   font-size:3.6rem;
   font-weight:900;
-  co
 }
 .frontPageText p{
   color:#666666;
@@ -74,7 +73,6 @@ body a{
   margin:auto;
   width:57vw;
 }
-.
 #pt{
   text-align:center;
   line-height:1.8;
@@ -133,7 +131,7 @@ body a{
   grid-row:2;
   grid-column:4;
 }
-footer{
+.letsChat{
   margin-top:36px;
   height:400px;
   display:grid;
@@ -141,17 +139,41 @@ footer{
   background:#eeebd9;
   margin-bottom:36px;
 }
-#footer1{
+#letsChat1{
   grid-column:1;
   font-size:5rem;
   display:flex;
   align-items:center;
   justify-content:center;
 }
-#footer2{
+#letsChat2{
   grid-column:2;
-  font-size:7rem;
+  font-size:9rem;
   display:flex;
   align-items:center;
   justify-content:center;
+}
+footer{
+  height:100px;
+  display:grid;
+  grid-template-columns:100vw;
+  grid-template-rows:50px 50px;
+}
+footer div{
+  grid-row:1;
+  grid-column:1;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+footer p{
+  grid-row:2;
+  grid-column:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+footer img{
+  height:32px;
+  padding:;
 }
