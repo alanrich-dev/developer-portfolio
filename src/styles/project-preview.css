@@ -1,0 +1,7 @@
+@media screen and (min-width:768px){
+  .project-container{
+    display: grid;
+    grid-template-columns: 9vw 51vw 40vw;
+    grid-template-rows: 64px 414px 160px;
+  }
+}
