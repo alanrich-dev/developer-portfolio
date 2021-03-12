@@ -139,6 +139,10 @@ body a{
   user-select: none;
   border: 0;
 }
+.project h2{
+  z-index:350;
+  color:white;
+}
 #react{
   grid-row:1;
   grid-column:2;
