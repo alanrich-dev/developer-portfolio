@@ -103,6 +103,20 @@ body a{
   display:flex;
   align-items:center;
   justify-content:center;
+  /*everything above this might need to be deleted or modified*/
+  position:relative;
+  display:block;
+  color:#eee;
+}
+.project a{
+  background-color: #16ADE3;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: hard-light;
+  box-shadow: 0 1px 0 rgb(30 30 32/20%) inset,
+              0 8px 16px rgb(0 0 0/50%);
+}
+.project img{
 
 }
 #react{
