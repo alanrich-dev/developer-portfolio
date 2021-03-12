@@ -97,19 +97,12 @@ body a{
   margin-bottom:36px;
 }
 .project{
-  border-radius:5px;
-  background:#eeebd9;
-  height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  /*everything above this might need to be deleted or modified*/
   position:relative;
   display:block;
   color:#eee;
 }
 .project a{
-  background-color: #16ADE3;
+  background-color:black;
   background-size: cover;
   background-position: center center;
   background-blend-mode: hard-light;
@@ -124,24 +117,15 @@ body a{
   z-index:220;
   width: 100%;
   height: 100%;
-}
-.project img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-  z-index: 250;
-  max-height: 4rem;
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  user-select: none;
-  border: 0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 .project h2{
+  font-size: 4.2rem;
+  vertical-align:middle;
   z-index:350;
-  color:white;
+  opacity:80%;
 }
 #react{
   grid-row:1;
