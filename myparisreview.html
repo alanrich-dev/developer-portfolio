@@ -7,14 +7,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/styles/styleDesktop.css">
-  <link rel="stylesheet" href="/src/styles/styleTablet.css">
-  <link rel="stylesheet" href="/src/styles/styleMobile.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   <link rel="stylesheet" href="/src/styles/hamburger.css">
   <link rel="stylesheet" href="/src/styles/project-preview.css">
 </head>
+
 <body>
+
   <input id="burger" type="checkbox" />
 
   <label for="burger">
@@ -32,21 +31,25 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
-  <main class='projectStory'>
-    <h1>My Paris Review</h1>
-    <h4>Lorem Ipsum * more text * 2020</h4>
-    <div>
-      <img src="" alt=""> <!--Or a video-->
+  <!---  Main Content  --->
+  <div class='project-container'>
+    <img class='project-image' src='/src/media/louise.png'>
+
+    <ul class='project-tools'>
+      <li>CSS Grid</li>
+      <li>FlexBox</li>
+      <li>Media Queries</li>
+    </ul>
+
+    <div class='project-text'>
+      <h2>Responsive Design</h2>
+      <p>The first webpage I built. I basically played with CSS for months while iterating through designs. Eventually I decided to move on to javascript after putting together something that my daughter could display her drawings on.</p>
+      <form class='project-form'>
+        <button formaction='https://github.com/alanrich-dev/kids-webpage'>View Code</button>
+        <button formaction='http://myparisreview.org'>View Live</button>
+      </form>
     </div>
-    <h2>The Problem</h2>
-    <p><i>The Paris Review</i> website lacks utility. Their is no way to keep track of stories you've read or exclude them from new searches.</p>
-    <h2>The Solution</h2>
-    <p>An app that searches the archives of <i>theparisreview.org</i> while excluding the titles in your library from results.</p>
-    <!--Insert Images of project -->
-    <h2>The Plan</h2>
-    <p>I first focused on the data structures, deciding on a NoSQL database of three collections. A collection of stories for each user. A global collection of stories that users query by various parameters. And a global collection of story summaries. Entries in each collection sharing the same title received a shared 4 digit identifier.<br><br> Next up was acquiring the database of titles from <i>theparisreview.org</i>. The structure of the website made scraping the urls quite simple. All fiction stories are listed under a directory named fiction and assigned a 4 digit url parameter corresponding to the sequence of published stories with 0001 being the first story published in <i>The Paris Review</i>.<br><br>Once I had the array of URLs I mapped a new array of objects containing the key value pairs that would suffice for my uses' query requirements. This array served as the collection of searchable stories.</p>
-    <!--Insert Images of project -->
-  </main>
+  </div>
+
 </body>
 </html>
