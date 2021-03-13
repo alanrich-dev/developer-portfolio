@@ -23,6 +23,9 @@
     color:black;
     background:#fafafa;
   }
+  li{
+    list-style-type: none;
+  }
   body h2{
     font-size: 7rem;
   }
@@ -39,26 +42,38 @@
   .project-container{
     display: grid;
     grid-template-columns: 9vw 51vw 7vw 24vw 9vw;
-    grid-template-rows: 64px 414px 160px;
+    grid-template-rows: 80px 360px 160px;
   }
   .project-image{
     grid-row:2;
     grid-column:2;
+    width:100%;
+    height:;
   }
   .project-tools{
     grid-row:3;
     grid-column:2;
+    font-size:2.8rem;
+    color:grey;
+    display:flex;
+    justify-content: flex-end;
+  }
+  .project-tools li{
+  margin-left:48px;
   }
   .project-text{
-    grid-row:2;
+    grid-row:2/4;
     grid-column:4;
     overflow: hidden;
+  }
+  .project-text h2{
+    font-size: 5rem;
   }
   .project-form{
 
   }
   .project-form button{
     border-radius:5px;
-    
+
   }
 }
