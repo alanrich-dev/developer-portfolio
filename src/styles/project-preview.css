@@ -54,4 +54,11 @@
     grid-column:4;
     overflow: hidden;
   }
+  .project-form{
+
+  }
+  .project-form button{
+    border-radius:5px;
+    
+  }
 }
