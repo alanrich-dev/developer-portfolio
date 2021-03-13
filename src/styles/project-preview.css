@@ -1,7 +1,57 @@
 @media screen and (min-width:768px){
+  /*-----------------------------GLOBALS-------------------------------*/
+  *{
+    box-sizing:border-box;
+  }
+  nav{
+    display:flex;
+    justify-content: center;
+    z-index:230;
+  }
+  html{
+    font-size:10px;
+    height:100%;
+    width:100%;
+    background:white;
+    overflow-x: hidden;
+  }
+  body{
+    height:100%;
+    width:100%;
+    font-family: 'Inter', sans-serif;
+    font-weight:900;
+    color:black;
+    background:#fafafa;
+  }
+  body h2{
+    font-size: 7rem;
+  }
+  body p{
+    font-size:1.8rem;
+    line-height:1.4;
+    font-weight:300;
+  }
+  body a{
+    text-decoration:none;
+    color:inherit;
+  }
+  /*-------------------------------END GLOBALS------------------------*/
   .project-container{
     display: grid;
-    grid-template-columns: 9vw 51vw 40vw;
+    grid-template-columns: 9vw 51vw 7vw 24vw 9vw;
     grid-template-rows: 64px 414px 160px;
+  }
+  .project-image{
+    grid-row:2;
+    grid-column:2;
+  }
+  .project-tools{
+    grid-row:3;
+    grid-column:2;
+  }
+  .project-text{
+    grid-row:2;
+    grid-column:4;
+    overflow: hidden;
   }
 }
